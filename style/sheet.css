@@ -13,7 +13,7 @@ html{
 }
 
 body{
-    background-color:rgb(251, 252, 236);
+    background-color:#eeeff5;
 }
 
 a{
@@ -81,7 +81,7 @@ header{
     font-size: 1.7rem;
     color: white;
     font-weight: 700;
-    border: 1px solid #fbfcec;
+    border: 1px solid #eeeff5;
     transition-duration: 0.2s;
 }
 
@@ -121,7 +121,7 @@ header{
 }
 
 .account-handle{
-    color:#7a7c92;
+    color:#a6a8bee1;
 }
 
 
@@ -134,8 +134,8 @@ main{
 
 .main-feed{
     width: 50%;
-    border-left: 1px solid #7a7c92;
-    border-right: 1px solid #7a7c92;
+    border-left: 1px solid #d4d5e2;
+    border-right: 1px solid #d4d5e2;
 
 }
 
@@ -147,6 +147,7 @@ main{
     height: 55px;
     width: 100;
     color: #031522;
+    background-color:#EEEFF5 ;
     font-size: 2rem;
     font-weight: 400;
     padding: 0 15px;
@@ -162,6 +163,8 @@ main{
     height: 120px;
     padding: 4px 16px;
 }
+
+
 
 .new-tweet .tweet-img{
     cursor: pointer;
@@ -179,8 +182,9 @@ main{
 .new-tweet-details input{
     width: 100%;
     height: 24px;
-    background-color: #fbfcec;
+    background-color: #f4f4f86b;
     border: none;
+   margin: 1px;
     outline: none;
 }
 
@@ -200,14 +204,12 @@ main{
 }
 
 
-.new-tweet-actions ul li i{
+.new-tweet-actions ul li i, .tweet-icons i, .user-details i{
     margin-right: 12px;
     color:#7a7c92;
     cursor: pointer;
     font-weight: 400;
     font-size: 1.8rem;
-
-
 }
 
 .new-tweet-actions .tweet-btn{
@@ -218,6 +220,78 @@ main{
     margin: 0;  
 
 }
+
+.feed-tweet{
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    padding: 12px  16px 0 16px;
+    border-top: 1px solid #d4d5e2;
+}
+
+.feed-tweet:hover{
+    background-color: #e6e7f0 ;
+}
+
+
+.feed-tweet-details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 12px;
+}
+
+.user-details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.user-details a{
+    font-weight: 700;
+}
+
+.user-details  span{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-left: 3px;
+}
+
+.tweet-text{
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.tweet-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px 0;
+    padding-right: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

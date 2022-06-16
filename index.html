@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="style/sheet.css">
+    
+
+
+   
     <title>Twitter</title> 
 </head>
 <body>
@@ -53,8 +57,7 @@
                 <i class="material-icons-outlined">more</i>
                 <span>More</span>
             </a>    
-            <button class="tweet-btn">Tweet</button>
-
+         
         </div>
 
         <div class ="main-account">
@@ -71,7 +74,7 @@
 
     <main>
         <div class="main-flex">
-            <div class="main-feed">
+            <div class="main-feed" id="mainfeed">
                 <div class="home-bar">
                     <span>Home</span>
                     <i class="material-icons-outlined">auto_awesome</i>
@@ -82,13 +85,13 @@
                     <img  class="tweet-img"src="images/user.PNG" alt="">
 
                     <div class="new-tweet-details">
-                        <form>
+                        <form class="form" id="form">
                             <div class="input-box">
-                                <input type="text" name="user-name" required="required" placeholder="Your name.." value="">
+                                <input type="text" name="name" id="name" required placeholder="Your name.." value="">
                             </div>
 
                             <div class="input-box">
-                                <input type="text" name="user-tweet" required="required" placeholder="What's in your mind?" value="">
+                                <input type="text" name="tweet" id="tweet" required placeholder="What's in your mind?" value="">
                             </div>
                            
                             <div class="new-tweet-actions">
@@ -99,7 +102,7 @@
                                     <li><i class="material-icons-outlined">event</i></li>
                                 </ul>
                                 
-                                <button type="submit" class="tweet-btn">Tweet</button>
+                                <button  type="submit" id="submit" class="tweet-btn">Tweet</button>
                             </div>
                            
                         </form>
@@ -109,187 +112,41 @@
 
                 </div>
 
+                <div id="tweets-container">
+                  <!--
+                    <div class="feed-tweet">
+                        <img  class="tweet-img"src="images/A-img.PNG" alt="">
+                      
+                        <div class="feed-tweet-details">
+                            <div class="user-details">
+                                <a href="" class="user-name"> Aaya sh
+                                    <span class="account-handle"> @aaya_</span>
+                                </a>
+                                <i class="material-icons-outlined">more_horiz</i>
+                            </div>
+    
+                            <div class="tweet-text"> 
+                                <p class="user-tweet" >Hello New tweet! Hello New tweet!</p>
+                            </div>
+    
+                            <div class="tweet-icons">
+                                <i id="retweet" class="material-icons">restart_alt</i>
+                                <i class="material-icons-outlined">chat_bubble_outline</i>
+                                <i id="lgike"  class="like material-icons-outlined">favorite_border</i>
+                                <i class="material-icons-outlined">upload</i>
+
+                                
+    
+                            </div>
+    
+                        </div>
+                    </div> 
+                  --> 
+                   
+
+                </div>
+               
                 
-
-                <div class="feed-tweet">
-                    <img  class="tweet-img"src="images/user.PNG" alt="">
-
-                    <div class="feed-tweet-details">
-                        <div class="user-details">
-                            <a href="" class="user-name"> Aaya sh
-                                <span class="account-handle"> @aaya_</span>
-                            </a>
-                            <i class="material-icons-outlined">more_horiz</i>
-                        </div>
-
-                        <div class="tweet-text"> 
-                            <p>Hello New tweet! Hello New tweet!</p>
-                        </div>
-
-                        <div class="tweet-icons">
-                            <i class="material-icons-outlined">restart_alt</i>
-                            <i class="material-icons-outlined">chat_bubble_outline</i>
-                            <i class="material-icons-outlined">favorite_border</i>
-                            <i class="material-icons-outlined">upload</i>
-
-                        </div>
-
-                    </div>
-                </div> 
-                
-                <div class="feed-tweet">
-                    <img  class="tweet-img"src="images/user.PNG" alt="">
-                  
-                    <div class="feed-tweet-details">
-                        <div class="user-details">
-                            <a href="" class="user-name"> Aaya sh
-                                <span class="account-handle"> @aaya_</span>
-                            </a>
-                            <i class="material-icons-outlined">more_horiz</i>
-                        </div>
-
-                        <div class="tweet-text"> 
-                            <p>Hello New tweet! Hello New tweet!</p>
-                        </div>
-
-                        <div class="tweet-icons">
-                            <i class="material-icons-outlined">restart_alt</i>
-                            <i class="material-icons-outlined">chat_bubble_outline</i>
-                            <i class="material-icons-outlined">favorite_border</i>
-                            <i class="material-icons-outlined">upload</i>
-
-                        </div>
-
-                    </div>
-                </div> 
-
-
-                <div class="feed-tweet">
-                    <img  class="tweet-img"src="images/A-img.PNG" alt="">
-                  
-                    <div class="feed-tweet-details">
-                        <div class="user-details">
-                            <a href="" class="user-name"> Aaya sh
-                                <span class="account-handle"> @aaya_</span>
-                            </a>
-                            <i class="material-icons-outlined">more_horiz</i>
-                        </div>
-
-                        <div class="tweet-text"> 
-                            <p>Hello New tweet! Hello New tweet!</p>
-                        </div>
-
-                        <div class="tweet-icons">
-                            <i class="material-icons-outlined">restart_alt</i>
-                            <i class="material-icons-outlined">chat_bubble_outline</i>
-                            <i class="material-icons-outlined">favorite_border</i>
-                            <i class="material-icons-outlined">upload</i>
-
-                        </div>
-
-                    </div>
-                </div> 
-
-                <div class="feed-tweet">
-                    <img  class="tweet-img"src="images/A-img.PNG" alt="">
-                  
-                    <div class="feed-tweet-details">
-                        <div class="user-details">
-                            <a href="" class="user-name"> Aaya sh
-                                <span class="account-handle"> @aaya_</span>
-                            </a>
-                            <i class="material-icons-outlined">more_horiz</i>
-                        </div>
-
-                        <div class="tweet-text"> 
-                            <p>Hello New tweet! Hello New tweet!</p>
-                        </div>
-
-                        <div class="tweet-icons">
-                            <i class="material-icons-outlined">restart_alt</i>
-                            <i class="material-icons-outlined">chat_bubble_outline</i>
-                            <i class="material-icons-outlined">favorite_border</i>
-                            <i class="material-icons-outlined">upload</i>
-
-                        </div>
-
-                    </div>
-                </div> 
-                <div class="feed-tweet">
-                    <img  class="tweet-img"src="images/A-img.PNG" alt="">
-                  
-                    <div class="feed-tweet-details">
-                        <div class="user-details">
-                            <a href="" class="user-name"> Aaya sh
-                                <span class="account-handle"> @aaya_</span>
-                            </a>
-                            <i class="material-icons-outlined">more_horiz</i>
-                        </div>
-
-                        <div class="tweet-text"> 
-                            <p>Hello New tweet! Hello New tweet!</p>
-                        </div>
-
-                        <div class="tweet-icons">
-                            <i class="material-icons-outlined">restart_alt</i>
-                            <i class="material-icons-outlined">chat_bubble_outline</i>
-                            <i class="material-icons-outlined">favorite_border</i>
-                            <i class="material-icons-outlined">upload</i>
-
-                        </div>
-
-                    </div>
-                </div> 
-                <div class="feed-tweet">
-                    <img  class="tweet-img"src="images/A-img.PNG" alt="">
-                  
-                    <div class="feed-tweet-details">
-                        <div class="user-details">
-                            <a href="" class="user-name"> Aaya sh
-                                <span class="account-handle"> @aaya_</span>
-                            </a>
-                            <i class="material-icons-outlined">more_horiz</i>
-                        </div>
-
-                        <div class="tweet-text"> 
-                            <p>Hello New tweet! Hello New tweet!</p>
-                        </div>
-
-                        <div class="tweet-icons">
-                            <i class="material-icons-outlined">restart_alt</i>
-                            <i class="material-icons-outlined">chat_bubble_outline</i>
-                            <i class="material-icons-outlined">favorite_border</i>
-                            <i class="material-icons-outlined">upload</i>
-
-                        </div>
-
-                    </div>
-                </div> 
-                <div class="feed-tweet">
-                    <img  class="tweet-img"src="images/A-img.PNG" alt="">
-                  
-                    <div class="feed-tweet-details">
-                        <div class="user-details">
-                            <a href="" class="user-name"> Aaya sh
-                                <span class="account-handle"> @aaya_</span>
-                            </a>
-                            <i class="material-icons-outlined">more_horiz</i>
-                        </div>
-
-                        <div class="tweet-text"> 
-                            <p>Hello New tweet! Hello New tweet!</p>
-                        </div>
-
-                        <div class="tweet-icons">
-                            <i class="material-icons-outlined">restart_alt</i>
-                            <i class="material-icons-outlined">chat_bubble_outline</i>
-                            <i class="material-icons-outlined">favorite_border</i>
-                            <i class="material-icons-outlined">upload</i>
-
-                        </div>
-
-                    </div>
-                </div> 
             </div>
 
             <div class="side-feed">
@@ -359,7 +216,7 @@
                             </div>
                         </div>
                             
-                            <button class="tweet-btn">follow</button>               
+                            <button class="follow-btn">follow</button>               
                         
                         </div>
 
@@ -372,7 +229,7 @@
                                     <span class="account-handle">@jsmith_</span>
                                 </div>
                             </div>
-                            <button class="tweet-btn">follow</button>               
+                            <button class="follow-btn">follow</button>               
                         
                         </div>
 
@@ -386,5 +243,9 @@
     </main>
  
 </body>
+
+
+<script type="text/javascript" src="scripts/script.js"></script>
+
 
 </html>
